@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS dbtechblog;
+
+CREATE DATABASE dbtechblog;
