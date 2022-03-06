@@ -1,3 +1,11 @@
-h1 {
-  background-color: aqua;
+.card {
+  margin: 40px 40px 0 40px;
+}
+
+.card-header {
+  background-color: #b4c1a5;
+}
+
+#posted-by {
+  padding-left: 50%;
 }
