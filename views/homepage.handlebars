@@ -1,1 +1,18 @@
-<div>You are on the homepage</div>
+<ol>
+  {{#each posts as |post|}}
+    <li>
+      <article class="post">
+        <div class="title">
+          <h2>{{post.title}}
+            Posted by
+            {{post.user.username}}
+            on
+            {{post.created_at}}</h2>
+        </div>
+        <div class="meta">
+          {{post.comments}}
+        </div>
+      </article>
+    </li>
+  {{/each}}
+</ol>
