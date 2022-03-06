@@ -1,3 +1,11 @@
+body {
+  background-color: #e6e8e3;
+}
+
+.navbar {
+  background-color: #b4c1a5;
+}
+
 .card {
   margin: 40px 40px 0 40px;
 }
@@ -8,4 +16,13 @@
 
 #posted-by {
   padding-left: 50%;
+}
+
+.btn-no-style {
+  background-color: #b4c1a5;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1em;
 }
