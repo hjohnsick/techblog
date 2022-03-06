@@ -1,18 +1,14 @@
-<ol>
-  {{#each posts as |post|}}
-    <li>
-      <article class="post">
-        <div class="title">
-          <h2>{{post.title}}
-            Posted by
-            {{post.user.username}}
-            on
-            {{post.created_at}}</h2>
-        </div>
-        <div class="meta">
-          {{post.comments}}
-        </div>
-      </article>
-    </li>
-  {{/each}}
-</ol>
+{{#each posts as |post|}}
+  <div class="card">
+    <header class="card-header">
+      <p class="title is-5">{{post.title}}
+        <span class="title is-6 has-text-right">Posted by
+          {{post.user.username}}
+          on
+          {{post.created_at}}</span></p>
+    </header>
+    <div class="card-content">
+
+    </div>
+  </div>
+{{/each}}
