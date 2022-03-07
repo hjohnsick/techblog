@@ -27,6 +27,7 @@ body {
   font-size: 1em;
 }
 
-.new-post-form {
+.new-post-form,
+.comment-form {
   margin: 40px 40px 0 40px;
 }
