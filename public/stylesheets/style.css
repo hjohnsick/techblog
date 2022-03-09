@@ -28,6 +28,12 @@ body {
 }
 
 .new-post-form,
-.comment-form {
+.comment-form,
+.comments {
   margin: 40px 40px 0 40px;
+}
+
+.italic {
+  font-style: italic;
+  padding-right: 3px;
 }

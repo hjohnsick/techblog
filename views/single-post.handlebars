@@ -11,12 +11,19 @@
   </div>
 </div>
 
-<div class="comments">
+<div>
   {{#each post.comments}}
-    <section class="comment">
-      <p>{{user.username}}</p>
-      <p>{{comment_text}}</p>
-    </section>
+    <div class="card comments">
+      <div class="card-content">
+        <p>{{comment_text}}</p>
+      </div>
+      <footer class="card-footer">
+        <p class="card-footer-item">
+          <span class="italic">{{user.username}}</span>
+          commented on
+          {{created_at}}</p>
+      </footer>
+    </div>
   {{/each}}
 </div>
 
