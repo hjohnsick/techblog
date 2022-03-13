@@ -37,3 +37,7 @@ body {
   font-style: italic;
   padding-right: 3px;
 }
+
+.hidden {
+  display: none;
+}

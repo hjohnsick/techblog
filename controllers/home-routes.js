@@ -37,6 +37,7 @@ router.get("/dashboard", withAuth, (req, res) => {
   Post.findAll({
     attributes: ["id", "title", "contents", "created_at"],
     include: [
+      User,
       {
         model: Comment,
         attributes: ["id", "comment_text", "post_id", "user_id", "created_at"],
@@ -45,15 +46,17 @@ router.get("/dashboard", withAuth, (req, res) => {
           attributes: ["username"],
         },
       },
-      {
-        model: User,
-        attributes: ["username"],
-      },
+      // {
+      //   model: User,
+      //   attributes: ["username"],
+      // },
     ],
   })
     .then((dbPostData) => {
       // pass a single post object into the homepage template
+
       const posts = dbPostData.map((post) => post.get({ plain: true }));
+      console.log(posts, "All post");
       res.render("dashboard", { posts });
     })
     .catch((err) => {
