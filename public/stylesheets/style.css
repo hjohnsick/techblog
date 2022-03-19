@@ -1,9 +1,19 @@
 body {
   background-color: #e6e8e3;
+  font-family: "Hubballi", cursive;
 }
 
 .navbar {
   background-color: #b4c1a5;
+}
+
+.navbar-item {
+  font-family: "Monofett", cursive;
+}
+
+.login-form h2,
+.signup-form h2 {
+  font-family: "Faster One", cursive;
 }
 
 .card {
@@ -40,4 +50,9 @@ body {
 
 .hidden {
   display: none;
+}
+
+button {
+  font-family: "Hubballi", cursive;
+  font-weight: bold;
 }
