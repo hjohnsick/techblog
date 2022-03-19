@@ -1,8 +1,12 @@
-<div class="posts">
-  <h2>Edit Post</h2>
+<div class="posts mx-6 my-6">
+  <h2 class="is-size-2">Edit Post</h2>
   <form>
-    <input name="post-title" value="{{post.title}}" />
-    <textarea>{{post.contents}}</textarea>
+    <div class="field">
+      <input class="input" name="post-title" value="{{post.title}}" />
+    </div>
+    <div class="field">
+      <textarea class="textarea">{{post.contents}}</textarea>
+    </div>
     <button type="submit">Save post</button>
     <button type="button" class="delete-post-btn">Delete post</button>
   </form>
