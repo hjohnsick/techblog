@@ -1,17 +1,12 @@
 <div class="posts">
-  <div class="card">
-    <header class="card-header">
-        <p class="card-header-title is-5">{{post.title}}
-          <span class="card-header-title is-6" id="posted-by">Posted by
-            {{post.user.username}}
-            on
-            {{format_date post.created_at}}
-          </span>
-        </p>
-      </a>
-    </header>
-    <div class="card-content">
-      <p>{{post.contents}}</p>
-    </div>
-  </div>
+  <h2>Edit Post</h2>
+  <form>
+    <input name="post-title" value="{{post.title}}" />
+    <textarea>{{post.contents}}</textarea>
+    <button type="submit">Save post</button>
+    <button type="button" class="delete-post-btn">Delete post</button>
+  </form>
 </div>
+
+<script src="/javascript/edit-post.js"></script>
+<script src="/javascript/delete-post.js"></script>
