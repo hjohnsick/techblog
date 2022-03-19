@@ -2,11 +2,15 @@
   {{#each posts as |post|}}
     <div class="card">
       <header class="card-header">
-        <p class="card-header-title is-5">{{post.title}}
-          <span class="card-header-title is-6" id="posted-by">Posted by
-            {{post.user.username}}
-            on
-            {{format_date post.created_at}}</span></p>
+        <a href="/dashboard/edit/{{post.id}}" class="edit-link">
+          <p class="card-header-title is-5">{{post.title}}
+            <span class="card-header-title is-6" id="posted-by">Posted by
+              {{post.user.username}}
+              on
+              {{format_date post.created_at}}
+            </span>
+          </p>
+        </a>
       </header>
       <div class="card-content">
         <p>{{post.contents}}</p>
@@ -15,7 +19,7 @@
   {{/each}}
 </div>
 
-<!--Need to display form here-->
+<!-- Form to create blog post -->
 <form class="add-blog-post-form hidden">
   <h2 class="title is-4">Add Blog Post</h2>
   <div>
