@@ -27,18 +27,20 @@
   {{/each}}
 </div>
 
-<form class="comment-form">
-  <div>
-    <textarea
-      class="textarea"
-      name="comment-body"
-      placeholder="write comment here"
-    ></textarea>
-  </div>
+{{#if loggedIn}}
+  <form class="comment-form">
+    <div>
+      <textarea
+        class="textarea"
+        name="comment-body"
+        placeholder="write comment here"
+      ></textarea>
+    </div>
 
-  <div>
-    <button class="button" type="submit">Add Comment</button>
-  </div>
-</form>
+    <div>
+      <button class="button" type="submit">Add Comment</button>
+    </div>
+  </form>
+{{/if}}
 
 <script src="/javascript/comment.js"></script>

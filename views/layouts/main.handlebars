@@ -18,7 +18,15 @@
     <div class="wrapper">
       <header>
         <nav class="navbar" role="navigation" aria-label="main navigation">
-          <div class="navbar-menu">
+          <div class="navbar-brand">
+            <h1 class="is-size-4">The Tech Blog</h1>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="tech-blog-nav">
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                </a>
+          </div>
+          <div id="tech-blog-nav" class="navbar-menu">
             <div class="navbar-start is-size-3">
               <a class="navbar-item" href="/">Home</a>
               <a class="navbar-item" href="/dashboard">Dashboard</a>
@@ -37,6 +45,7 @@
     {{#if loggedIn}}
       <script src="/javascript/logout.js"></script>
     {{/if}}
+    <script src="/javascript/index.js"></script>
   </body>
 
 </html>

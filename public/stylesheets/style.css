@@ -7,6 +7,10 @@ body {
   background-color: #b4c1a5;
 }
 
+.navbar-brand {
+  font-family: "Bungee Inline", cursive;
+}
+
 .navbar-item {
   font-family: "Monofett", cursive;
 }
