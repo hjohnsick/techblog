@@ -2,7 +2,15 @@
 
 The tech blog allows a user to sign up or login. A user is able to view the blog posts and comments without being logged in. A user must be logged in to comment on a post and to create, edit, and delete a post.
 
+![login page](./public/images/login.png)
+
+![home](./public/images/homepage.png)
+
+![edit](./public/images/edit.png)
+
 To view the site visit, [The Tech Blog](https://cryptic-brook-73251.herokuapp.com/)
+
+View a demo here, [Demo](https://drive.google.com/file/d/1rdR09luCZ548IudGUbTh1ZEow_5oZr6O/view)
 
 ## Getting started
 
